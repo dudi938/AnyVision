@@ -1,0 +1,9 @@
+- name: stop minio container
+  hosts: minio_cluster
+  tasks:
+    - name: "Stop minio cluster"
+      docker_compose:
+        project_src: /AnyVision/ex3_minio/docker
+        build: False
+        files: "docker-compose.yml"
+        state: "absent"

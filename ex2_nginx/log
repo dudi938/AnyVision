@@ -1,0 +1,10 @@
+alpine nginx_files nginx_utils task.sh Wed, Jan 22, 2020 12:58:33 PM: task.sh | docker build enginx sevice***********************
+alpine log nginx_files nginx_utils task.sh Wed, Jan 22, 2020 12:58:34 PM: task.sh | docker run enginx sevice***********************
+alpine log nginx_files nginx_utils task.sh Wed, Jan 22, 2020 12:59:13 PM: task.sh | docker build enginx sevice***********************
+alpine log nginx_files nginx_utils task.sh Wed, Jan 22, 2020 12:59:13 PM: task.sh | docker run enginx sevice***********************
+alpine log nginx_files nginx_utils task.sh Wed, Jan 22, 2020 1:02:01 PM: task.sh | docker build enginx sevice***********************
+alpine log nginx_files nginx_utils task.sh Wed, Jan 22, 2020 1:03:18 PM: task.sh | docker run enginx sevice***********************
+alpine log nginx_files nginx_utils task.sh Wed, Jan 22, 2020 2:00:53 PM: task.sh | docker build enginx sevice***********************
+alpine log nginx_files nginx_utils task.sh Wed, Jan 22, 2020 2:01:13 PM: task.sh | docker run enginx sevice***********************
+alpine log nginx_files task.sh Wed, Jan 22, 2020 2:58:14 PM: task.sh | docker build enginx sevice***********************
+alpine log nginx_files task.sh Wed, Jan 22, 2020 2:58:15 PM: task.sh | docker run enginx sevice***********************

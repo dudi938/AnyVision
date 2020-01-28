@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: nginx
+  name: nginx
+  namespace: my-ns
+spec:
+  type: NodePort
+  ports:
+  - name: "nginx-service"
+    port: 8080
+    nodePort: 31000
+  selector:
+    app: nginx
+
+
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   labels:
+#     app: nginx
+#   name: nginx
+#   namespace: my-ns
+# spec:
+#   ports:
+#   - name: "nginx-service"
+#     port: 31000
+#     targetPort: 8080
+#   selector:
+#     app: nginx
+
+# ---    
+
+# apiVersion: networking.k8s.io/v1beta1
+# kind: Ingress
+# metadata:
+#   name: nginx-ingress
+#   namespace: my-ns
+# spec:
+#   rules:
+#     - http:
+#         paths:
+#         - path: /root
+#           backend:
+#             serviceName: nginx
+#             servicePort: 8080

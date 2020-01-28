@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+  namespace: my-ns
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      volumes:
+      - name: nginx-files-pv-volume
+        persistentVolumeClaim:
+            claimName: nginx-files-pv-claim
+      - name: nginx-logs-pv-volume
+        persistentVolumeClaim:
+          claimName: nginx-log-pv-claim
+      - name: nginx-html-pv-volume
+        persistentVolumeClaim:
+          claimName: nginx-html-pv-claim                        
+      containers:
+      - name: nginx
+        image: dudi938/anyvision_nginx:alpine
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 2
+          periodSeconds: 30               
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - mountPath: "/etc/nginx"
+          name: nginx-files-pv-volume
+        - mountPath: "/var/log/nginx"
+          name: nginx-logs-pv-volume   
+        - mountPath: "/var/www/html"
+          name: nginx-html-pv-volume                             

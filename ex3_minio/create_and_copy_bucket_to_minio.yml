@@ -1,0 +1,24 @@
+- name: Create bucket with the files and push to the server
+  hosts: minio_cluster
+  tasks:
+    - name: "download minio client tool"
+      shell: |
+        wget https://dl.min.io/client/mc/release/linux-amd64/mc
+        sudo chmod +x mc
+      args:
+        chdir: /
+    - name: "config the minio client with the server"
+      shell: |
+        ./mc config host add anyvisionminio http://3.134.117.12:9004 minio minio123
+      args:
+        chdir: /
+    - name: "create bucket - pipe"
+      shell: |
+        ./mc mb anyvisionminio/pipe
+      args:
+        chdir: /    
+    - name: "upload files to the bucket - pipe"
+      shell: |
+        ./mc cp /pipeFiles/* anyvisionminio/pipe
+      args:
+        chdir: /           

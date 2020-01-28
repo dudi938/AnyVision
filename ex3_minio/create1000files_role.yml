@@ -1,0 +1,12 @@
+- name: create 1000 files of 1k size
+  hosts: minio_cluster
+  tasks:
+    - name: "create dir"
+      shell: |
+        sudo mkdir  -p /pipeFiles
+    - name: "create files"
+      shell: |
+        truncate -s 1k "{{ item }}".txt
+      with_sequence: start=0 end=1000 format=file_%02d
+      args:
+        chdir: /pipeFiles

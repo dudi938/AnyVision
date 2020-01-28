@@ -1,0 +1,59 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nginx-files-pv-volume
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 3Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/C/Users/Dudi/Desktop/AnyVision/ex2_nginx/nginx_files/"
+  claimRef:
+    name: nginx-files-pv-claim
+    namespace: my-ns
+
+---
+
+  
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nginx-logs-pv-volume
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 3Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/C/Users/Dudi/Desktop/AnyVision/ex2_nginx/nginx_files/logs/"
+  claimRef:
+    name: nginx-log-pv-claim
+    namespace: my-ns    
+
+---
+
+
+  apiVersion: v1
+  kind: PersistentVolume
+  metadata:
+    name: nginx-html-pv-volume
+    labels:
+      type: local
+  spec:
+    storageClassName: manual
+    capacity:
+      storage: 3Gi
+    accessModes:
+      - ReadWriteOnce
+    hostPath:
+      path: "/C/Users/Dudi/Desktop/AnyVision/ex2_nginx/nginx_files/html/"
+    claimRef:      
+      name: nginx-html-pv-claim
+      namespace: my-ns          

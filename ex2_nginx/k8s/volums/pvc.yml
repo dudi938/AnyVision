@@ -1,0 +1,42 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nginx-files-pv-claim
+  namespace: my-ns
+spec:
+  storageClassName: manual
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 3Gi
+
+---
+  
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nginx-log-pv-claim
+  namespace: my-ns
+spec:
+  storageClassName: manual
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 3Gi 
+
+---
+
+  apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    name: nginx-html-pv-claim
+    namespace: my-ns
+  spec:
+    storageClassName: manual
+    accessModes:
+      - ReadWriteOnce
+    resources:
+      requests:
+        storage: 3Gi       

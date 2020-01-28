@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+  labels:
+    app: incerment
+  namespace: my-ns
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: incerment
+  template:
+    metadata:
+      labels:
+        app: incerment
+    spec:
+      containers:
+      - name: incerment
+        image: localhost:5000/incerment
+        ports:
+        - containerPort: 3000

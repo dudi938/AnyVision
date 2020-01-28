@@ -1,0 +1,9 @@
+- name: run minio container
+  hosts: minio_cluster
+  tasks:
+    - name: "Start minio cluster"
+      docker_compose:
+        project_src: /AnyVision/ex3_minio/docker
+        build: False
+        files: "docker-compose.yml"
+        state: "present"

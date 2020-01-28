@@ -1,0 +1,25 @@
+2020/01/27 07:18:38 [emerg] 18#0: bind() to 0.0.0.0:80 failed (98: Address in use)
+2020/01/27 07:18:38 [emerg] 18#0: bind() to 0.0.0.0:80 failed (98: Address in use)
+2020/01/27 07:18:38 [emerg] 18#0: bind() to 0.0.0.0:80 failed (98: Address in use)
+2020/01/27 07:18:38 [emerg] 18#0: bind() to 0.0.0.0:80 failed (98: Address in use)
+2020/01/27 07:18:38 [emerg] 18#0: bind() to 0.0.0.0:80 failed (98: Address in use)
+2020/01/27 07:18:38 [emerg] 18#0: still could not bind()
+2020/01/27 08:24:07 [emerg] 23#0: bind() to 0.0.0.0:80 failed (98: Address in use)
+2020/01/27 08:24:07 [emerg] 23#0: bind() to 0.0.0.0:80 failed (98: Address in use)
+2020/01/27 08:24:07 [emerg] 23#0: bind() to 0.0.0.0:80 failed (98: Address in use)
+2020/01/27 08:24:07 [emerg] 23#0: bind() to 0.0.0.0:80 failed (98: Address in use)
+2020/01/27 08:24:07 [emerg] 23#0: bind() to 0.0.0.0:80 failed (98: Address in use)
+2020/01/27 08:24:07 [emerg] 23#0: still could not bind()
+2020/01/27 08:25:38 [error] 9#0: *2 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 192.168.65.3, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:32000", referrer: "http://localhost:32000/"
+2020/01/27 08:54:48 [error] 9#0: *1 open() "/var/www/html/root" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /root HTTP/1.1", host: "localhost"
+2020/01/27 08:58:36 [error] 9#0: *2 open() "/var/www/html/root" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /root HTTP/1.1", host: "localhost"
+2020/01/27 09:02:49 [error] 9#0: *4 open() "/var/www/html/root" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /root HTTP/1.1", host: "localhost"
+2020/01/27 09:05:01 [error] 9#0: *1 open() "/var/www/html/root" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /root HTTP/1.1", host: "localhost"
+2020/01/27 09:05:10 [error] 9#0: *2 open() "/var/www/html/root" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /root HTTP/1.1", host: "localhost"
+2020/01/27 09:05:11 [error] 9#0: *3 open() "/var/www/html/root" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /root HTTP/1.1", host: "localhost"
+2020/01/27 09:37:30 [emerg] 6#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2020/01/27 09:45:18 [emerg] 6#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2020/01/27 09:47:38 [emerg] 21#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2020/01/27 09:51:46 [emerg] 25#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2020/01/27 18:31:27 [error] 9#0: *89 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 192.168.65.3, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:31000", referrer: "http://localhost:31000/"
+2020/01/28 21:46:54 [error] 10#0: *22391 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 192.168.65.3, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:31000", referrer: "http://localhost:31000/"
