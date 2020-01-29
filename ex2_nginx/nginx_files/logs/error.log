@@ -23,3 +23,5 @@
 2020/01/27 09:51:46 [emerg] 25#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
 2020/01/27 18:31:27 [error] 9#0: *89 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 192.168.65.3, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:31000", referrer: "http://localhost:31000/"
 2020/01/28 21:46:54 [error] 10#0: *22391 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 192.168.65.3, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:31000", referrer: "http://localhost:31000/"
+2020/01/28 22:49:55 [error] 9#0: *2 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 192.168.65.3, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:31000", referrer: "http://localhost:31000/"
+2020/01/29 12:09:14 [error] 9#0: *3844 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 192.168.65.3, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:31000", referrer: "http://localhost:31000/"

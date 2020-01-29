@@ -17,7 +17,7 @@ line="************************ $(date): $_self | docker run enginx sevice*******
 echo $line
 echo $line >> ./log
 docker run -it \
-  -p 32000:32000 \
+  -p 8080:8080 \
   -v /AnyVision/ex2_nginx/nginx_files/:/etc/nginx \
   -v /AnyVision/ex2_nginx/nginx_files/logs/:/var/log/nginx  \
   -v /AnyVision/ex2_nginx/nginx_files/html/:/var/www/html  \
