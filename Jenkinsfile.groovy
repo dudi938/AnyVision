@@ -15,7 +15,7 @@ pipeline {
             // failed, record the test results and archive the jar file.
             success {
                 sayHello 'Dave'
-                docker-build
+                dockerAPI
             }
          }
       }
