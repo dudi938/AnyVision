@@ -1,3 +1,4 @@
+@Library('pipeline-library-demo')_
 pipeline {
     agent { label 'slave1' }
 
@@ -13,7 +14,7 @@ pipeline {
             // If Maven was able to run the tests, even if some of the test
             // failed, record the test results and archive the jar file.
             success {
-                echo 'build suuceded'
+                sayHello 'Dave'
             }
          }
       }
