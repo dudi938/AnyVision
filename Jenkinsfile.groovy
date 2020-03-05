@@ -16,7 +16,7 @@ pipeline {
             success {
                 echo 'Hi dev'
                 sayHello 'Dave'
-                dockerAPI 'Dudi'
+                dockerAPI
             }
          }
       }
