@@ -10,8 +10,8 @@ pipeline {
             sh label: '', script: 'docker ps -a'
          }
 
-         post {
-            echo "Build finished"
+         //post {
+         //   echo "Build finished"
             // If Maven was able to run the tests, even if some of the test
             // failed, record the test results and archive the jar file.
             //success {
@@ -19,7 +19,7 @@ pipeline {
             //    sayHello 'Dave'
             //    dockerAPI
             //}
-         }
+         //}
       }
    }
 }
