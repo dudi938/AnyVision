@@ -1,6 +1,6 @@
 //@Library('pipeline-library-demo')_
 pipeline {
-    agent { label 'slave1' }
+    agent any
 
    stages {
       stage('Build') {
