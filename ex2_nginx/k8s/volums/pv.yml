@@ -11,7 +11,7 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/C/Users/Dudi/Desktop/AnyVision/ex2_nginx/nginx_files/"
+    path: "/Users/dgershtenkoren/Documents/work/AnyVision/ex2_nginx/nginx_files/"
   claimRef:
     name: nginx-files-pv-claim
     namespace: my-ns
@@ -32,7 +32,7 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/C/Users/Dudi/Desktop/AnyVision/ex2_nginx/nginx_files/logs/"
+    path: "/Users/dgershtenkoren/Documents/work/AnyVision/ex2_nginx/nginx_files/logs/"
   claimRef:
     name: nginx-log-pv-claim
     namespace: my-ns    
@@ -53,7 +53,7 @@ spec:
     accessModes:
       - ReadWriteOnce
     hostPath:
-      path: "/C/Users/Dudi/Desktop/AnyVision/ex2_nginx/nginx_files/html/"
+      path: "/Users/dgershtenkoren/Documents/work/AnyVision/ex2_nginx/nginx_files/html/"
     claimRef:      
       name: nginx-html-pv-claim
       namespace: my-ns          
